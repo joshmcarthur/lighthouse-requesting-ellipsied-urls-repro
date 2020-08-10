@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lighthouse requesting malformed URLs</title>
+</head>
+<body>
+  
+  <img src="/image.jpg?query-param-to-get-over-75-chararacters-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+
+  <!-- Note: Make sure that host + this path won't push this over
+    75 and be truncated -->
+  <img src="/image.jpg" />
+
+  <p>Image source: https://nos.twnsnd.co/image/188128990528</p>
+</body>
+</html>
