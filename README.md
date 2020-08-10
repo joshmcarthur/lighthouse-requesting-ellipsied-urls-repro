@@ -1,5 +1,7 @@
 # Reproduces Lighthouse issue requesting malformed URLs
 
+https://github.com/GoogleChrome/lighthouse/issues/11244
+
 1. Start a static server. I used `python3 -m http.server` which starts a server
    on port 8000. Make sure it's an option that logs incoming requests. 
 2. Run `bash audit.sh [hostname]` where `[hostname]` is the URL. e.g. `bash
